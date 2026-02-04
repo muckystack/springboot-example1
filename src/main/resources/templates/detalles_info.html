@@ -16,7 +16,9 @@
       </li>
       <li>
         <strong>Dirección:</strong>
-        <span th:text="${Empleado.direccion}"></span>
+        <span
+          th:text="${Empleado.direccion != null ? Empleado.direccion : 'No proporcionada'}"
+        ></span>
       </li>
       <li>
         <strong>Puesto:</strong> <span th:text="${Empleado.puesto}"></span>
